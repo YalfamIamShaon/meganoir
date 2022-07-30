@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pascin portfolio</title>
+    <script type="text/javascript"></script>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/logo/favicon.ico.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&family=Montserrat:wght@200;400;600&family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&family=Montserrat:wght@200;400;600&family=Poppins:wght@100;200;300;400;500&family=Uchen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scrollTop" onclick="scrollToTop()">
+      <span class="material-icons" style="color: white">keyboard_arrow_up</span>
+    </div>
+
+    <div class="loader">
+      <img src="img/logo/PASCIN LOGO FULL-1.png" alt="Loading.." />
+    </div>
+
+    <header>
+      <nav
+        class="navbar"
+        style="
+          display: flex;
+          padding: 2%;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <a href="index.html" style="font-size: 30px"><p>MEGANOIR</p></a>
+        <!-- <a
+          href="index.html"
+          class="nav-branding"
+           style="font-size: 33px; font-weight: 600" 
+          ><img src="img/logo/logo12.png"/></a> -->
+
+        <ul class="nav-menu" style="font-size: 21px">
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="joinus.html" class="nav-link">JOIN US</a>
+          </li>
+          <li class="nav-item">
+            <a href="letsconnect.html" class="nav-link">LET'S CONNECT</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script.js"></script>
+
+    <div
+      class="intro"
+      style="
+        font-weight: normal;
+        padding: 2%;
+        font-size: 128px;
+        padding-top: 6%;
+        line-height: 0.2;
+      "
+    >
+      <p style="margin-right: 12px">We</p>
+      <p class="typing">create</p>
+      <span style="margin-left: 12px"><p>utilitarian</p></span>
+    </div>
+    <div
+      class="text12"
+      style="
+        font-weight: normal;
+        padding: 2%;
+        font-size: 128px;
+        padding-bottom: 6%;
+      "
+    >
+      <p>visual items for people and businesses</p>
+    </div>
+
+    <script>
+      const texts = ["create", "design", "build"];
+      let count = 0;
+      let index = 0;
+      let currentText = "";
+      let letter = "";
+
+      (function type() {
+        if (count === texts.length) {
+          count = 0;
+        }
+
+        currentText = texts[count];
+        letter = currentText.slice(0, ++index);
+
+        document.querySelector(".typing").textContent = letter;
+        if (letter.length === currentText.length) {
+          count++;
+          index = 0;
+        }
+
+        setTimeout(type, 400);
+      })();
+    </script>
+
+    <div class="container" style="padding: 2%; padding-bottom: 10%">
+      <div class="gallery-container w-6 h-2">
+        <div class="gallery-item">
+          <a href="saakhi.html">
+            <div class="image">
+              <img src="img/sakhi/10.jpg" alt="image" />
+            </div>
+          </a>
+          <div class="content">
+            <div>
+              <h2>SAAKHI</h2>
+              <p>Branding, Logo Design | Clothing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container w-4 h-2">
+        <div class="gallery-item">
+          <a href="tearaja.html">
+            <div class="image">
+              <img src="img/tearaja/12.jpg" alt="image" />
+            </div>
+          </a>
+          <div class="content">
+            <div>
+              <h2>TEARAJA</h2>
+              <p>Creative shoot & Product shoot | Tea Brand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+          <a href="caketalks.html">
+            <div class="image">
+              <img src="img/caketalks/cake3 (2).jpg" alt="image" />
+            </div>
+          </a>
+          <div class="content">
+            <div>
+              <h2>CAKE TALKS</h2>
+              <p>Branding & Packaging | Bakery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+          <a href="tata.html">
+            <div class="image">
+              <img src="img/tatanexon/3.jpg" alt="image" />
+            </div>
+          </a>
+          <div class="content">
+            <div>
+              <h2>TATA NEXON</h2>
+              <p>Creative Shoot | Automobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container w-4 h-2">
+        <div class="gallery-item">
+          <a href="pas.html">
+            <div class="image">
+              <img src="img/sterlin/cards.jpg" alt="image" />
+            </div>
+          </a>
+          <div class="content">
+            <div>
+              <h2>STERLIN</h2>
+              <p>Branding | Fintech</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <main class="down-text">
+        <span
+          ><a href="work.html"><p>more work</p></a></span
+        >
+      </main>
+    </center>
+    <!-- <div class="heading-about">
+      <p style="font-weight: normal; line-height: 0.25rem; font-size: 50px">
+        <a href="work.html" style="color: #161eaa">more work..</a>
+      </p>
+    </div> -->
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var scroll = document.querySelector(".scrollTop");
+        scroll.classList.toggle("active", window.scrollY > 500);
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0, //zero pixels from the top
+          left: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
+<section class="footer">
+  <div class="social">
+    <a href="https://www.instagram.com/pascinstudio/" target="_blank"
+      ><i class="fab fa-instagram"></i
+    ></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <ul class="list">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="about.html">Services</a>
+    </li>
+    <li>
+      <a href="terms.html">Terms</a>
+    </li>
+    <li>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </li>
+  </ul>
+  <p class="copyright">MEGANOIR @2022</p>
+</section>
+
+<!-- Crédit to https://bootsnipp.com/snippets/bxDBA -->
