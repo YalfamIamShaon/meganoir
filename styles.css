@@ -86,7 +86,7 @@ a {
 @media (max-width: 700px) {
   .hamburger {
     display: block;
-    background: white;
+    /* background: white; */
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -159,7 +159,7 @@ a {
     font-size: 38px;
   }
   .heading-about p a {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -931,7 +931,7 @@ a {
 
 /* Terms styling */
 .children {
-  border: 5px solid white;
+  border: 5px solid transparent;
 }
 
 @media (min-width: 768px) {
@@ -946,6 +946,7 @@ main {
   height: 100%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .down-text p {
@@ -983,4 +984,50 @@ main {
 
 .down-text span:hover:before {
   transform: translateY(10px);
+}
+@media (max-width: 768px) {
+  .down-text p {
+    font-size: 35px;
+  }
+  .down-text span {
+    position: relative;
+  }
+
+  .down-text span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #161eaa;
+    bottom: 9px;
+    transition: all 0.2s ease-out;
+  }
+
+  .down-text p:hover {
+    background-position: 0 11px;
+  }
+
+  .down-text span:hover:before {
+    transform: translateY(10px);
+  }
+  .services {
+    font-size: 18px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    float: left;
+  }
+  .services .heading-to h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+  }
+  .footer .social a {
+    font-size: 18px;
+  }
+  .footer ul {
+    font-size: 18px;
+  }
 }
