@@ -11,7 +11,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "rockford-sans-light", sans-serif;
+  font-family: "Manrope", sans-serif;
+  /* font-family: "rockford-sans-light", sans-serif; */
   color: black;
   text-decoration: none;
   box-sizing: border-box;
@@ -551,13 +552,19 @@ a {
 }
 .heading-about p a:hover {
   font-weight: bold;
-  /*  color: black; */
 }
 .text2 {
   font-size: 45px;
 }
 .heading-about p {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
+}
+.heading-about h1 {
+  font-size: 85px;
+  padding-bottom: 23px;
+}
+.heading-about p a {
+  font-size: 50px;
 }
 @media screen and (max-width: 750px) {
   .heading-about {
@@ -571,6 +578,16 @@ a {
   }
   .heading-about h3 span {
     font-size: 30px;
+  }
+  .heading-about h1 {
+    font-size: 35px;
+    margin-bottom: 20;
+  }
+  .heading-about p {
+    font-size: 20px;
+  }
+  .heading-about p a {
+    font-size: 20px;
   }
 }
 .contain {
@@ -869,7 +886,7 @@ a {
 }
 .services .heading-to h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 70px;
   color: #000000;
   margin: 0;
 }
@@ -1052,11 +1069,13 @@ main {
 .heading-about-priv p {
   font-size: 32px;
   font-weight: normal;
+  line-height: normal;
   padding: 4%;
 }
 .heading-about-priv h2 {
   font-size: 42px;
   font-weight: bold;
+  line-height: normal;
   padding: 4%;
 }
 @media (max-width: 768px) {
@@ -1065,5 +1084,6 @@ main {
   }
   .heading-about-priv h2 {
     font-size: 25px;
+    line-height: normal;
   }
 }
