@@ -31,9 +31,8 @@ a {
 }
 
 .navbar a p {
-  font-family: "Uchen", serif;
+  font-family: "Manrope", sans-serif;
   font-weight: bold;
-
   letter-spacing: 0.2px;
 }
 
@@ -860,7 +859,7 @@ a {
 .container-to {
   float: left;
   /* display: inline-block; */
-  max-width: 1570px;
+  max-width: 100%;
   margin: auto;
 }
 .services .heading-to {
