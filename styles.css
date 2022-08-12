@@ -896,7 +896,7 @@ main {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 41px;
   background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -916,7 +916,7 @@ main {
   left: 0;
   right: 0;
   height: 15px;
-  background: #161eaa;
+  background: #ffb703;
   bottom: 9px;
   transition: all 0.2s ease-out;
 }
@@ -930,7 +930,7 @@ main {
 }
 @media (max-width: 768px) {
   .down-text p {
-    font-size: 35px;
+    font-size: 23px;
   }
   .down-text span {
     position: relative;
@@ -941,7 +941,7 @@ main {
     position: absolute;
     left: 0;
     right: 0;
-    height: 10px;
+    height: 6px;
     background: #161eaa;
     bottom: 9px;
     transition: all 0.2s ease-out;
