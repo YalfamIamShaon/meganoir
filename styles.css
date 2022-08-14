@@ -995,4 +995,10 @@ main {
     font-size: 25px;
     line-height: normal;
   }
+  .services .heading-to h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin: 0;
+  }
 }
