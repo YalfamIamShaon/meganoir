@@ -935,7 +935,18 @@ main {
   .down-text span {
     position: relative;
   }
-
+  .down-text p {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+  }
   .down-text span:before {
     content: "";
     position: absolute;
