@@ -1013,3 +1013,15 @@ main {
     margin: 0;
   }
 }
+.download-btn {
+  background-color: #161eaa;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: RoyalBlue;
+}
